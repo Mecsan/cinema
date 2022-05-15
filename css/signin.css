@@ -1,0 +1,201 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+header {
+  height: 100vh;
+
+}
+
+.head_text {
+  background: linear-gradient(#1c171769, #121214c8, #000000), url(img1.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 95%;
+
+}
+
+
+form {
+  padding: 10px;
+  /* background-color: #fdfdfd60; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 361px;
+}
+
+input {
+  width: 100%;
+  margin: 0px auto;
+  outline: 0px;
+  border: 0px;
+  font-size: 1.2rem;
+  padding: 6px 20px;
+}
+
+.form_co{
+  margin-bottom: 10px;
+  width: 100%;
+}
+span{
+  opacity: 0;
+}
+
+
+
+input[type="submit"] {
+  background: linear-gradient(#797676, #8f00ff);
+  font-weight: bold;
+  color: white;
+
+}
+input:focus {
+  border: 2px solid rgb(42, 234, 218);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px rgb(0, 136, 255);
+}
+
+.success input{
+  border: 2px solid green;
+  box-shadow: 1px 1px 3px rgb(0, 255, 115);
+
+}
+
+.success input:focus{
+  border: 2px solid green;
+  box-shadow: 1px 1px 3px rgb(0, 255, 115);
+
+}
+
+input[type="submit"]:hover {
+  background: rgb(81, 31, 142);
+}
+
+.error input{
+  border: 2px solid red;
+  box-shadow: 1px 1px 3px red;
+}
+.error input:focus{
+  border: 2px solid red;
+}
+.error span{
+  color: red;
+  opacity: 1;
+}
+
+.or {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.or::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 46%;
+  height: 5px;
+  background-color: red;
+  top: 45%;
+  left: 0%;
+}
+
+.or::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 46%;
+  height: 5px;
+  background-color: red;
+  top: 45%;
+  right: 0%;
+}
+
+form a {
+  color: rgba(214, 165, 238, 0.52);
+  padding: 0px 10px;
+}
+
+.sign {
+  display: flex;
+}
+
+.head_text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+div.kuch a{
+  color: white  ;
+  font-size: large;
+}
+div.kuch a:hover{
+  color: white;
+  text-decoration: none;
+}
+.kuch{
+  background: linear-gradient(red,purple);
+  padding: 2px 10px;
+  border-radius: 10px;
+  opacity: 1;
+}
+div.kuch{
+  transform: scale(1.5);
+}
+span.kuch{
+  margin-left: 16px;
+}
+.head_text p{
+  margin-top: 10px;
+}
+div.kuch:hover{
+  background: linear-gradient(purple,red);
+  box-shadow: 1px 1px 10px white;
+
+
+}
+
+@media (max-width:600px) {
+
+  .head_text {
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+  }
+
+  .login {
+    width: 80%;
+  }
+
+  .or::after {
+    width: 40%;
+  }
+
+  .or::before {
+
+    width: 40%;
+
+  }
+
+  form {
+    padding: 0%;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+
+}

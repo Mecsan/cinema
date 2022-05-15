@@ -1,0 +1,452 @@
+header {
+    height: fit-content;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.movie_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 800px 20px black inset;
+    min-height: 60vh;
+}
+
+.width {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+ul{
+    padding: 0px;
+}
+.other ul {
+    list-style-position: inside;
+    display: flex;
+    list-style-type: disc;
+    padding: 0px;
+}
+
+.lan li,
+.dim li {
+    margin-right: 10px;
+}
+
+.smimg {
+    min-width: 320px;
+    min-height: 220px;
+
+}
+
+.in {
+    flex-basis: 60%;
+    padding-left: 30px;
+}
+
+.about_m {
+    position: relative;
+}
+
+.about_m h4 {
+    border-bottom: 4px solid red;
+    width: fit-content;
+}
+
+.main_about {
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.main_about h3 {
+    border-bottom: 2px solid purple;
+}
+
+.about div {
+    text-align: justify;
+}
+
+
+
+
+#book {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgb(115, 38, 187);
+    border-radius: 0px;
+    color: white;
+}
+
+#book:hover {
+    border-radius: 0px;
+    box-shadow: 1px 1px 10px white;
+    background-color: purple;
+}
+
+
+.cast img,
+.crew img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.cast_i,
+.crew_i {
+
+    /* margin-left: 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cast>div,
+.crew>div {
+    overflow: auto;
+    display: flex;
+    padding: 30px 0px;
+}
+
+.cast,
+.about,
+.crew {
+    margin-top: 50px;
+}
+
+.cast {
+    overflow: hidden;
+
+}
+
+.review {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.review_item {
+    /* border: 2px solid salmon; */
+    flex-basis: 45%;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(7 6 6 / 80%);
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 300px;
+}
+.review_item::-webkit-scrollbar{
+    height: 100px;
+   background-color: gray;
+}
+
+.review_top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.review_top::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    border: 2px solid rgb(42, 32, 182);
+}
+
+.review_name {
+    font-weight: bold;
+}
+
+.review_date {
+    font-size: .9rem;
+}
+
+.review h3 {
+    text-align: center;
+
+    width: 100%;
+}
+
+.new_review {
+    width: 100%;
+    text-align: left;
+    padding: 40px;
+}
+
+.new_review button {
+    font-size: 1rem;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}
+
+.big {
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: scale(1.5);
+    transition: .5s all;
+}
+
+.add {
+    padding-top: 30px;
+    display: flex;
+    height: 0px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.4s height;
+}
+
+.new_review button:hover {
+    background-color: rgb(85, 3, 85);
+}
+
+.add input,
+textarea {
+    width: 500px;
+    padding: 5px 20px;
+}
+
+.submit {
+    padding: 10px;
+    width: 30%;
+}
+
+.rtt {
+    transform: rotateZ(45deg) scale(1.5);
+    border-radius: 10px;
+}
+
+.not {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.rat_book {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smimg {
+    background-image: url('img/img1.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 210px;
+    height: 250px;
+}
+
+.loginmsg {
+    background-color: #dd5a5a;
+    padding: 10px;
+    width: fit-content;
+    color: white;
+}
+
+.link {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2px 5px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.link A:hover {
+    color: gray;
+}
+
+.review_item {
+
+    background-color: rgb(7 6 6 / 80%);
+    border-radius: 10px;
+    color: white;
+}
+
+.active {
+    position: relative;
+    background-color: #3e5e8c;
+    border-radius: 0px;
+    border: none;
+    overflow: hidden;
+
+}
+
+.form {
+    cursor: pointer;
+    padding: 0px 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+
+}
+
+.active:hover .dlt {
+    top: 0px;
+}
+
+.dlt {
+    background-color: red;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    transition: 0.5s top;
+}
+
+.form:hover {
+    box-shadow: 0px 0px 10px white;
+    color: white;
+}
+
+.update {
+    background-color: green;
+    position: relative;
+    top: -20px;
+    right: 40px;
+    display: none;
+}
+
+.active .review_con:focus {
+    border: none;
+    outline: none;
+}
+.edit{
+    position: absolute;
+    background: hotpink;
+    top: 30px;
+    right: 0px;
+}
+#back_form{
+    z-index: -2;
+    visibility: hidden;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+
+.selectionn{
+    padding: 20px;
+    background: #66d3c342;
+}
+.selectionn select{
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+@media(max-width:1050px) {
+    .width {
+        width: 100%;
+    }
+}
+
+
+.cotent h1 {
+    border-bottom: solid 4px blueviolet;
+    width: fit-content;
+}
+
+@media (max-width:800px) {
+    .smimg {
+        min-width: 100px;
+        min-height: 200px;
+    }
+
+}
+
+@media(max-width:650px) {
+    .review_item {
+        flex-basis: 90%;
+    }
+
+    .in {
+        flex-basis: 100%;
+        padding-bottom: 20px;
+    }
+
+    .other {
+        padding-left: 0px;
+    }
+
+    .smimg {
+        width: 80%;
+    }
+
+    .rat_book {
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 10px;
+        gap: 50px;
+    }
+
+    .main_about {
+        width: 95%;
+    }
+
+    .main_about h3 {
+        font-size: 1.2rem;
+    }
+
+    .cotent h1 {
+        width: 90%;
+        font-size: 1.4rem;
+        padding: 5px;
+        border-bottom: solid 4px blueviolet;
+    }
+
+    .cotent {
+        margin-top: 20px;
+    }
+
+    .cotent li {
+        font-size: 1rem;
+    }
+
+    .new_review {
+        padding: 20px;
+    }
+
+    .add input,
+    textarea {
+        width: 100%;
+    }
+}
+.soon{
+    font-size: 1.2rem;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    display: block;
+    padding: 2px 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px
+}
